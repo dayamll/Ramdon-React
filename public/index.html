@@ -14,7 +14,26 @@
   </head>
   <body>
 
-    <div id="container"></div>
+  <div id="container"></div>
+
+  <script type="text/babel">
+      
+// funcion ramdon-color
+  let color = () => {
+    return '#' + Math.floor(Math.random()*16777215).toString(16);
+  };
+
+// Componente container
+  class Container extends React.Component {
+    render() {
+      return (
+        <div className="content" style={{backgroundColor: color()}}>
+        </div>
+      );
+    }
+  }
+  ReactDOM.render(<Container/>, document.getElementById('container'));
+    </script>
 
   </body>
 </html>
