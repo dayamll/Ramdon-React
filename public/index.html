@@ -39,6 +39,20 @@ let getRandomFont = () => {
   let fontR = font[index];
   return fontR;
 }
+
+let randomImage = new Array();
+ 
+  randomImage[0] = "https://gif-free.com/uploads/posts/2017-07/1500441632_stitch-says-hi.gif";
+  randomImage[1] = "https://i.imgur.com/rwNGgi9.gif";
+  randomImage[2] = "https://78.media.tumblr.com/00900c7f3c9612638a9605bb5a71c855/tumblr_nfetk2UwcB1sj5h4oo1_1280.gif";
+  randomImage[3] = "https://static.tumblr.com/b915d36e8937b8cf40f84df49cc47d7e/zgrwi9t/rxNo0xqmn/tumblr_static_tumblr_static_8d5bz9xgfmgw80ocs84ogg4k4_640.gif";
+  randomImage[4] = "http://static.tumblr.com/6caf2fb00962936f4a49bb7e16f7bfec/0arm9ox/0bvmudlmc/tumblr_static_tumblr_msikcg4hng1sgwz03o1_500.gif";
+ 
+  let getRandomImage = () => { 
+    let number = Math.floor(Math.random()*randomImage.length);
+    let image = ('<img src="'+randomImage[number]+'" />');
+    return image;
+  }
  
 // Componente container
   class Container extends React.Component {
@@ -46,6 +60,7 @@ let getRandomFont = () => {
       return (
         <div className="content" style={{backgroundColor: color()}}>
           <h1 className={getRandomFont()}>{getRandomText()}</h1>
+          <figure>{getRandomImage()}</figure>
         </div>
       );
     }
