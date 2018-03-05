@@ -10,3 +10,43 @@ body {
   text-align: center;
   height: 100vh;
 }
+
+.font1 {
+  font-size: 20px;
+  color: white;
+}
+
+.font2 {
+  font-size: 40px;
+  color: rgb(0, 255, 255);
+}
+
+.font3 {
+  font-size: 60px;
+  color: rgb(255, 0, 128);
+}
+
+.font4 {
+  font-size: 80px;
+  color: rgb(255, 0, 0);
+}
+
+.font5 {
+  font-size: 100px;
+  color: rgb(0, 68, 255);
+}
+
+.font6 {
+  font-size: 120px;
+  color: rgb(255, 0, 191);
+}
+
+.font7 {
+  font-size: 130px;
+  color: rgb(238, 255, 0);
+}
+
+.font8 {
+  font-size: 140px;
+  color: rgb(5, 151, 29);
+}

@@ -31,12 +31,21 @@
   return text;
 };
 
+
+// funcion tamaño de texto- ramdon
+let getRandomFont = () => {
+  let font = ['font1', 'font2', 'font3', 'font4', 'font5', 'font6', 'font7', 'font8']
+  let index = Math.round(Math.random() * font.length);
+  let fontR = font[index];
+  return fontR;
+}
+ 
 // Componente container
   class Container extends React.Component {
     render() {
       return (
         <div className="content" style={{backgroundColor: color()}}>
-          <h1>{getRandomText()}</h1>
+          <h1 className={getRandomFont()}>{getRandomText()}</h1>
         </div>
       );
     }
