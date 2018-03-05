@@ -23,11 +23,20 @@
     return '#' + Math.floor(Math.random()*16777215).toString(16);
   };
 
+// funcion ramdon-texto(saludo)
+  let getRandomText = () => {
+  let arrTexts = ['Hola!', 'Holii', 'Hallo', 'Aloha', 'Hey', 'Bonjour', 'Buon Giorno', 'Namaste'];
+  let index = Math.round(Math.random() * arrTexts.length);
+  let text = arrTexts[index];
+  return text;
+};
+
 // Componente container
   class Container extends React.Component {
     render() {
       return (
         <div className="content" style={{backgroundColor: color()}}>
+          <h1>{getRandomText()}</h1>
         </div>
       );
     }
