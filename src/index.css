@@ -37,6 +37,7 @@ body {
 }
 
 .font6 {
+  font-family: 'Plaster', cursive;
   font-size: 120px;
   color: rgb(255, 0, 191);
 }
@@ -44,9 +45,15 @@ body {
 .font7 {
   font-size: 130px;
   color: rgb(238, 255, 0);
+  font-family: 'Coiny', cursive;
 }
 
 .font8 {
   font-size: 140px;
   color: rgb(5, 151, 29);
+  font-family: 'Anton', sans-serif;
+}
+
+.size-img {
+  width: 350px;
 }
